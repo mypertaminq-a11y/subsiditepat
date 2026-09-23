@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Kendaraan Subsidi Tepat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+        }
+        .card {
+            background-color: #fff;
+            width: 100%;
+            max-width: 380px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            overflow: hidden;
+        }
+        .header {
+            background-color: #f39c12;
+            color: white;
+            padding: 12px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 15px;
+            border-bottom: 1px solid #eee;
+            font-size: 13px;
+        }
+        .row .label { color: #555; }
+        .row .val { font-weight: bold; color: #222; }
+        .badge-green {
+            background-color: #27ae60;
+            color: white;
+            padding: 12px;
+            text-align: center;
+            margin: 15px;
+            border-radius: 6px;
+        }
+        .badge-green .quota { font-size: 18px; font-weight: bold; }
+        .badge-green .price { font-size: 13px; margin-top: 4px; }
+        .btn {
+            display: block;
+            width: calc(100% - 30px);
+            margin: 8px 15px;
+            padding: 10px 0;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            font-size: 13px;
+        }
+        .btn-green { background-color: #2e7d32; }
+        .btn-red { background-color: #c62828; margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="header">
+        Detail Kendaraan Terdaftar
+    </div>
+    
+    <div class="row"><span class="label">Tipe</span><span class="val">Solar</span></div>
+    <div class="row"><span class="label">Jenis</span><span class="val">Roda Empat</span></div>
+    <div class="row"><span class="label">No. Polisi</span><span class="val">BK 1835 EE</span></div>
+    <div class="row"><span class="label">Sisa Terakhir</span><span class="val">0.00 L</span></div>
+    <div class="row"><span class="label">Batas Kuota</span><span class="val">50.00 L</span></div>
+
+    <div class="badge-green">
+        <div class="quota">50.00 L</div>
+        <div class="price">Rp 340.000</div>
+    </div>
+
+    <a href="#" class="btn btn-green">JALANKAN PROSES</a>
+    <a href="#" class="btn btn-red">KEMBALI</a>
+</div>
+
+</body>
+</html>
